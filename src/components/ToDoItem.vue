@@ -13,7 +13,7 @@ export default {
       type: String,
     },
     done: {
-      default: true,
+      default: false,
       type: Boolean,
     },
     id: {
