@@ -57,7 +57,7 @@ export default {
     },
     deleteToDo(toDoId) {
       const itemIndex = this.ToDoItems.find((item) => item.id === toDoId);
-      this.ToDoItems.splice(itemIndex, 1);
+      this.ToDoItems.splice(this.ToDoItems.indexOf(itemIndex), 1);
       this.$refs.listSummary.focus();
     },
     editToDo(toDoId, newLabel) {
